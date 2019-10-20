@@ -3,6 +3,7 @@
     <string name="etNameHint">Name</string>
     <string name="etEmailHint">Email</string>
     <string name="etAdditionHint">Addition</string>
+    <string name="etIdHint">Id</string>
 
     <string name="btnAddCaption">Add</string>
     <string name="btnReadCaption">Read</string>

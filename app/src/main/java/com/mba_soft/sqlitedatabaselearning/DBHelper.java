@@ -19,7 +19,23 @@ public class DBHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
+
+        String tableName = "main_table";
+        String cNameName = "name";
+        String cNameEmail = "email";
+        String cNameAddition = "addition";
+
+        String query = "create table " + tableName +
+                "(id integer primary key autoincrement," +
+                cNameName + " text," +
+                cNameEmail + " text," +
+                cNameAddition + " text" +
+                ");";
+
         Log.d(LOG_TAG, "App: DBHelper-onCreate");
+
+        db.execSQL(query);
+
     }
 
     @Override
